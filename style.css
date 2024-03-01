@@ -1,0 +1,87 @@
+/* Establece el fondo negro para el cuerpo de la página y el color de la letra blanco */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif; /* Utiliza la fuente Arial como fuente predeterminada */
+}
+
+/* Define un contenedor para centrar el formulario */
+.formulario {
+    width: 50%; /* Establece el ancho del contenedor al 50% del ancho de la ventana del navegador */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del contenido dentro del contenedor */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(3, auto); /* Tres filas */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+/* Estilo para el formulario */
+form {
+    text-align: center; /* Centra el contenido del formulario */
+}
+
+/* Estilos para los campos de entrada y selección */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%; /* Los campos de entrada y selección ocupan todo el ancho disponible */
+    padding: 10px; /* Añade espacio dentro de los campos */
+    margin: 5px 0; /* Añade un pequeño margen entre los campos */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total del elemento */
+    border: none; /* Elimina los bordes de los campos */
+    border-radius: 5px; /* Añade esquinas redondeadas a los campos */
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
+/* Ocultar las flechas de incremento y decremento en input type number */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Otros navegadores */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none; /* Safari */
+}
+
+
+/* Estilos para el botón de envío */
+input[type="button"] {
+    background-color: #4caf50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 15px 20px; /* Añade espacio alrededor del texto del botón */
+    margin: 10px 0; /* Añade un margen alrededor del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Añade esquinas redondeadas al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    width: 100%; /* El botón de envío ocupa todo el ancho disponible */
+    margin-left: 50%; /*Centramos el botón*/
+}
+
+/* Estilos para el botón de envío cuando se pasa el cursor sobre él */
+input[type="button"]:hover {
+    background-color: #45a049; /* Cambia el color de fondo cuando se pasa el cursor */
+}
+
+/*  Resultados  */
+.resultados {
+    width: 50%; /* Establece el ancho del contenedor al 50% del ancho de la ventana del navegador */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del contenido dentro del contenedor */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(3, auto); /* Tres filas */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+/*Estilos para tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* Agrega tus estilos específicos para tablet aquí */
+}
+
+/* Estilos para smartphone */
+@media only screen and (max-width: 599px) {
+  /* Agrega tus estilos específicos para smartphone aquí */
+}
