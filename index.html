@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!--    Formulario  -->
     <form action="/submit" method="post" class="formulario">
         <div class="entrada">
         <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
@@ -28,7 +29,12 @@
         </div>
 
         <div class="entrada">
-            <input type="text" id="direccion" name="direccion" placeholder="dirección" required><br><br>
+            <select name="direccion" id="direccion" required>
+                <option value="" disabled selected hidden>Pais</option>
+                <option value="México">México</option>
+                <option value="EE.UU">EE.UU</option>
+                <option value="Canada">Canada</option>
+            </select><br><br>
         </div>
 
         <div class="curp">
@@ -42,14 +48,22 @@
         <input type="button" value="Enviar" onclick="capturarDatos()">
     </form>
 
+    <!--    Resultados en pantalla  -->
     <div class="resultados">
-        <div class="resultado">¡exito!</div>
-        <div class="resultado">Juan Perez</div>
-        <div class="resultado">Machirulo</div>
-        <div class="resultado">69</div>
-        <div class="resultado">México</div>
-        <div class="resultado">45658sfd564sd5f8</div>
-        <div class="resultado">fda5sd4a8w5s4ds5</div>
+        <div class="resultado" id="resultadoNombre"></div>
+        <div class="resultado" id="resultadoSexo"></div>
+        <div class="resultado" id="resultadoEdad"></div>
+        <div class="resultado" id="resultadoDireccion"></div>
+        <div class="resultado" id="resultadoCurp"></div>
+        <div class="resultado" id="resultadoRfc"></div>
+    </div>
+
+    <!--Mensaje de error-->
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="mensaje"></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
