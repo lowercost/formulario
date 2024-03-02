@@ -27,7 +27,7 @@ function capturarDatos() {
     }
     else {//si no es verdadera:
         document.getElementById("resultadoNombre").innerHTML = ("Eso no es un nombre");//Mostramos el error en pantalla
-        mensajeError("Me quieres ver la cara de estupida?")
+    mensajeError("Me quieres ver la cara de estupida?")
     }
 
     if (edad.match(regeda)) {
